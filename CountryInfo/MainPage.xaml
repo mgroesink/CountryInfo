@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CountryInfo.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackLayout Padding="20">
+        <Entry x:Name="countryCodeEntry" Placeholder="Enter country code (e.g., US)" />
+        <Button Clicked="OnGetCountryInfoClicked" Text="Get Country Info" />
+        <Image
+            Margin="10"
+            HorizontalOptions="Start"
+            MaximumHeightRequest="150"
+            MaximumWidthRequest="200"
+            Source="{Binding SelectedCountry.flags.png}" />
+        <Label FontSize="48" Text="{Binding SelectedCountry.name}" />
+        <Grid x:Name="grid" IsVisible="false" ColumnDefinitions=".4*,.6*" RowDefinitions="*,*,*,*">
+            <Label Grid.Row="0" Text="Capital" />
+            <Label Grid.Row="1" Text="Region" />
+            <Label Grid.Row="2" Text="Country Phone no." />
+            <Label Grid.Row="3" Text="Population" />
+            <Label
+                Grid.Row="0"
+                Grid.Column="1"
+                Text="{Binding SelectedCountry.capital}" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="1"
+                Text="{Binding SelectedCountry.region}" />
+            <Label
+                Grid.Row="2"
+                Grid.Column="1"
+                Text="{Binding SelectedCountry.callingCodes[0]}" />
+            <Label
+                Grid.Row="3"
+                Grid.Column="1"
+                Text="{Binding SelectedCountry.population}" />
+        </Grid>
+    </StackLayout>
+</ContentPage>
