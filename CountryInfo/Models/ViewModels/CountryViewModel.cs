@@ -1,10 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace CountryInfo.Models.ViewModels
 {
@@ -49,7 +44,5 @@ namespace CountryInfo.Models.ViewModels
                 Console.WriteLine($"Error: {ex.Message}");
             }
         }
-
     }
 }
-

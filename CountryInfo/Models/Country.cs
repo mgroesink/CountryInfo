@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CountryInfo.Models
+﻿namespace CountryInfo.Models
 {
     /// <summary>
     /// Model for a country
@@ -12,6 +6,7 @@ namespace CountryInfo.Models
     public class Country
     {
         #region Properties
+
         /// <summary>
         /// Gets or sets the name.
         /// </summary>
@@ -19,6 +14,7 @@ namespace CountryInfo.Models
         /// The name.
         /// </value>
         public string name { get; set; }
+
         /// <summary>
         /// Gets or sets the top level domain.
         /// </summary>
@@ -26,6 +22,7 @@ namespace CountryInfo.Models
         /// The top level domain.
         /// </value>
         public string[] topLevelDomain { get; set; }
+
         /// <summary>
         /// Gets or sets the alpha2 code.
         /// </summary>
@@ -33,6 +30,7 @@ namespace CountryInfo.Models
         /// The alpha2 code.
         /// </value>
         public string alpha2Code { get; set; }
+
         /// <summary>
         /// Gets or sets the alpha3 code.
         /// </summary>
@@ -40,6 +38,7 @@ namespace CountryInfo.Models
         /// The alpha3 code.
         /// </value>
         public string alpha3Code { get; set; }
+
         /// <summary>
         /// Gets or sets the calling codes.
         /// </summary>
@@ -47,6 +46,7 @@ namespace CountryInfo.Models
         /// The calling codes.
         /// </value>
         public string[] callingCodes { get; set; }
+
         /// <summary>
         /// Gets or sets the capital.
         /// </summary>
@@ -54,6 +54,7 @@ namespace CountryInfo.Models
         /// The capital.
         /// </value>
         public string capital { get; set; }
+
         /// <summary>
         /// Gets or sets the alt spellings.
         /// </summary>
@@ -61,6 +62,7 @@ namespace CountryInfo.Models
         /// The alt spellings.
         /// </value>
         public string[] altSpellings { get; set; }
+
         /// <summary>
         /// Gets or sets the subregion.
         /// </summary>
@@ -68,6 +70,7 @@ namespace CountryInfo.Models
         /// The subregion.
         /// </value>
         public string subregion { get; set; }
+
         /// <summary>
         /// Gets or sets the region.
         /// </summary>
@@ -75,6 +78,7 @@ namespace CountryInfo.Models
         /// The region.
         /// </value>
         public string region { get; set; }
+
         /// <summary>
         /// Gets or sets the population.
         /// </summary>
@@ -82,6 +86,7 @@ namespace CountryInfo.Models
         /// The population.
         /// </value>
         public int population { get; set; }
+
         /// <summary>
         /// Gets or sets the latlng.
         /// </summary>
@@ -89,6 +94,7 @@ namespace CountryInfo.Models
         /// The latlng.
         /// </value>
         public float[] latlng { get; set; }
+
         /// <summary>
         /// Gets or sets the demonym.
         /// </summary>
@@ -96,6 +102,7 @@ namespace CountryInfo.Models
         /// The demonym.
         /// </value>
         public string demonym { get; set; }
+
         /// <summary>
         /// Gets or sets the area.
         /// </summary>
@@ -103,6 +110,7 @@ namespace CountryInfo.Models
         /// The area.
         /// </value>
         public float area { get; set; }
+
         /// <summary>
         /// Gets or sets the gini.
         /// </summary>
@@ -110,6 +118,7 @@ namespace CountryInfo.Models
         /// The gini.
         /// </value>
         public float gini { get; set; }
+
         /// <summary>
         /// Gets or sets the timezones.
         /// </summary>
@@ -117,6 +126,7 @@ namespace CountryInfo.Models
         /// The timezones.
         /// </value>
         public string[] timezones { get; set; }
+
         /// <summary>
         /// Gets or sets the borders.
         /// </summary>
@@ -124,6 +134,7 @@ namespace CountryInfo.Models
         /// The borders.
         /// </value>
         public string[] borders { get; set; }
+
         /// <summary>
         /// Gets or sets the name of the native.
         /// </summary>
@@ -131,6 +142,7 @@ namespace CountryInfo.Models
         /// The name of the native.
         /// </value>
         public string nativeName { get; set; }
+
         /// <summary>
         /// Gets or sets the numeric code.
         /// </summary>
@@ -138,6 +150,7 @@ namespace CountryInfo.Models
         /// The numeric code.
         /// </value>
         public string numericCode { get; set; }
+
         /// <summary>
         /// Gets or sets the flags.
         /// </summary>
@@ -145,6 +158,7 @@ namespace CountryInfo.Models
         /// The flags.
         /// </value>
         public Flags flags { get; set; }
+
         /// <summary>
         /// Gets or sets the currencies.
         /// </summary>
@@ -152,6 +166,7 @@ namespace CountryInfo.Models
         /// The currencies.
         /// </value>
         public Currency[] currencies { get; set; }
+
         /// <summary>
         /// Gets or sets the languages.
         /// </summary>
@@ -159,6 +174,7 @@ namespace CountryInfo.Models
         /// The languages.
         /// </value>
         public Language[] languages { get; set; }
+
         /// <summary>
         /// Gets or sets the translations.
         /// </summary>
@@ -166,6 +182,7 @@ namespace CountryInfo.Models
         /// The translations.
         /// </value>
         public Translations translations { get; set; }
+
         /// <summary>
         /// Gets or sets the flag.
         /// </summary>
@@ -173,6 +190,7 @@ namespace CountryInfo.Models
         /// The flag.
         /// </value>
         public string flag { get; set; }
+
         /// <summary>
         /// Gets or sets the regional blocs.
         /// </summary>
@@ -180,6 +198,7 @@ namespace CountryInfo.Models
         /// The regional blocs.
         /// </value>
         public Regionalbloc[] regionalBlocs { get; set; }
+
         /// <summary>
         /// Gets or sets the cioc.
         /// </summary>
@@ -187,14 +206,16 @@ namespace CountryInfo.Models
         /// The cioc.
         /// </value>
         public string cioc { get; set; }
+
         /// <summary>
         /// Gets or sets a value indicating whether this <see cref="Country"/> is independent.
         /// </summary>
         /// <value>
         ///   <c>true</c> if independent; otherwise, <c>false</c>.
         /// </value>
-        public bool independent { get; set; } 
-        #endregion
+        public bool independent { get; set; }
+
+        #endregion Properties
     }
 
     /// <summary>
@@ -203,6 +224,7 @@ namespace CountryInfo.Models
     public class Flags
     {
         #region Properties
+
         /// <summary>
         /// Gets or sets the SVG.
         /// </summary>
@@ -210,14 +232,16 @@ namespace CountryInfo.Models
         /// The SVG.
         /// </value>
         public string svg { get; set; }
+
         /// <summary>
         /// Gets or sets the PNG.
         /// </summary>
         /// <value>
         /// The PNG.
         /// </value>
-        public string png { get; set; } 
-        #endregion
+        public string png { get; set; }
+
+        #endregion Properties
     }
 
     /// <summary>
@@ -226,6 +250,7 @@ namespace CountryInfo.Models
     public class Translations
     {
         #region Properties
+
         /// <summary>
         /// Gets or sets the br.
         /// </summary>
@@ -233,6 +258,7 @@ namespace CountryInfo.Models
         /// The br.
         /// </value>
         public string br { get; set; }
+
         /// <summary>
         /// Gets or sets the pt.
         /// </summary>
@@ -240,6 +266,7 @@ namespace CountryInfo.Models
         /// The pt.
         /// </value>
         public string pt { get; set; }
+
         /// <summary>
         /// Gets or sets the nl.
         /// </summary>
@@ -247,6 +274,7 @@ namespace CountryInfo.Models
         /// The nl.
         /// </value>
         public string nl { get; set; }
+
         /// <summary>
         /// Gets or sets the hr.
         /// </summary>
@@ -254,6 +282,7 @@ namespace CountryInfo.Models
         /// The hr.
         /// </value>
         public string hr { get; set; }
+
         /// <summary>
         /// Gets or sets the fa.
         /// </summary>
@@ -261,6 +290,7 @@ namespace CountryInfo.Models
         /// The fa.
         /// </value>
         public string fa { get; set; }
+
         /// <summary>
         /// Gets or sets the de.
         /// </summary>
@@ -268,6 +298,7 @@ namespace CountryInfo.Models
         /// The de.
         /// </value>
         public string de { get; set; }
+
         /// <summary>
         /// Gets or sets the es.
         /// </summary>
@@ -275,6 +306,7 @@ namespace CountryInfo.Models
         /// The es.
         /// </value>
         public string es { get; set; }
+
         /// <summary>
         /// Gets or sets the fr.
         /// </summary>
@@ -282,6 +314,7 @@ namespace CountryInfo.Models
         /// The fr.
         /// </value>
         public string fr { get; set; }
+
         /// <summary>
         /// Gets or sets the ja.
         /// </summary>
@@ -289,6 +322,7 @@ namespace CountryInfo.Models
         /// The ja.
         /// </value>
         public string ja { get; set; }
+
         /// <summary>
         /// Gets or sets it.
         /// </summary>
@@ -296,14 +330,16 @@ namespace CountryInfo.Models
         /// It.
         /// </value>
         public string it { get; set; }
+
         /// <summary>
         /// Gets or sets the hu.
         /// </summary>
         /// <value>
         /// The hu.
         /// </value>
-        public string hu { get; set; } 
-        #endregion
+        public string hu { get; set; }
+
+        #endregion Properties
     }
 
     /// <summary>
@@ -312,6 +348,7 @@ namespace CountryInfo.Models
     public class Currency
     {
         #region Properties
+
         /// <summary>
         /// Gets or sets the code.
         /// </summary>
@@ -319,6 +356,7 @@ namespace CountryInfo.Models
         /// The code.
         /// </value>
         public string code { get; set; }
+
         /// <summary>
         /// Gets or sets the name.
         /// </summary>
@@ -326,14 +364,16 @@ namespace CountryInfo.Models
         /// The name.
         /// </value>
         public string name { get; set; }
+
         /// <summary>
         /// Gets or sets the symbol.
         /// </summary>
         /// <value>
         /// The symbol.
         /// </value>
-        public string symbol { get; set; } 
-        #endregion
+        public string symbol { get; set; }
+
+        #endregion Properties
     }
 
     /// <summary>
@@ -342,6 +382,7 @@ namespace CountryInfo.Models
     public class Language
     {
         #region Properties
+
         /// <summary>
         /// Gets or sets the iso639 1.
         /// </summary>
@@ -349,6 +390,7 @@ namespace CountryInfo.Models
         /// The iso639 1.
         /// </value>
         public string iso639_1 { get; set; }
+
         /// <summary>
         /// Gets or sets the iso639 2.
         /// </summary>
@@ -356,6 +398,7 @@ namespace CountryInfo.Models
         /// The iso639 2.
         /// </value>
         public string iso639_2 { get; set; }
+
         /// <summary>
         /// Gets or sets the name.
         /// </summary>
@@ -363,14 +406,16 @@ namespace CountryInfo.Models
         /// The name.
         /// </value>
         public string name { get; set; }
+
         /// <summary>
         /// Gets or sets the name of the native.
         /// </summary>
         /// <value>
         /// The name of the native.
         /// </value>
-        public string nativeName { get; set; } 
-        #endregion
+        public string nativeName { get; set; }
+
+        #endregion Properties
     }
 
     /// <summary>
@@ -379,6 +424,7 @@ namespace CountryInfo.Models
     public class Regionalbloc
     {
         #region Properties
+
         /// <summary>
         /// Gets or sets the acronym.
         /// </summary>
@@ -386,16 +432,15 @@ namespace CountryInfo.Models
         /// The acronym.
         /// </value>
         public string acronym { get; set; }
+
         /// <summary>
         /// Gets or sets the name.
         /// </summary>
         /// <value>
         /// The name.
         /// </value>
-        public string name { get; set; } 
-        #endregion
+        public string name { get; set; }
+
+        #endregion Properties
     }
-
 }
-
-
