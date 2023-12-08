@@ -8,19 +8,8 @@ namespace CountryInfo.Models.ViewModels
         /// <summary>
         /// The selected country
         /// </summary>
+        [ObservableProperty]
         private Country _selectedCountry;
-
-        /// <summary>
-        /// Gets or sets the selected country.
-        /// </summary>
-        /// <value>
-        /// The selected country.
-        /// </value>
-        public Country SelectedCountry
-        {
-            get => _selectedCountry;
-            set => SetProperty(ref _selectedCountry, value);
-        }
 
         /// <summary>
         /// Loads the country data.
